@@ -1,0 +1,26 @@
+﻿<Canvas x:Class="SifteoSurfaceApp.BlockerCanvas"
+            xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+            xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+            xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+            xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+            xmlns:s="http://schemas.microsoft.com/surface/2008"
+            xmlns:local="clr-namespace:SifteoSurfaceApp"
+            mc:Ignorable="d" 
+            Background="Black"
+            x:Name="LayoutRoot"
+            MouseMove="LayoutRoot_MouseMove">    
+
+    <!--<local:BlueEcoli x:Name="BlueFahRealz" TouchDown="Blue_TouchDown"/>-->
+    
+    <!--<local:BlueEcoli x:Name="Blue1" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue2" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue3" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue4" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue5" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue6" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue7" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue8" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue9" TouchDown="Blue_TouchDown_2"/>
+    <local:BlueEcoli x:Name="Blue10" TouchDown="Blue_TouchDown_2"/>-->
+    
+</Canvas>

@@ -1,0 +1,304 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{590019C0-F71C-4ABF-9AD8-992A2AE4CE8D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SifteoSurfaceApp</RootNamespace>
+    <AssemblyName>SifteoSurfaceApp</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Artefact">
+      <HintPath>..\..\ArtefactAnimator_4048\ArtefactAnimator_4048_WPF_4\Release\Artefact.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.Design.Extensibility, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Windows.Design.Interaction, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Microsoft.Surface" />
+    <Reference Include="Microsoft.Surface.Presentation" />
+    <Reference Include="Microsoft.Surface.Presentation.Generic" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AncestryChain.cs" />
+    <Compile Include="BlockerCanvas.xaml.cs">
+      <DependentUpon>BlockerCanvas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlueEcoli.xaml.cs">
+      <DependentUpon>BlueEcoli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlueEcoliScatterViewItem.xaml.cs">
+      <DependentUpon>BlueEcoliScatterViewItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlueTagVizCanvas.xaml.cs">
+      <DependentUpon>BlueTagVizCanvas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlueTail.xaml.cs">
+      <DependentUpon>BlueTail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BlueToxin.xaml.cs">
+      <DependentUpon>BlueToxin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoTransferServer.cs" />
+    <Compile Include="RedEcoli.xaml.cs">
+      <DependentUpon>RedEcoli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RedTagVisualizer.xaml.cs">
+      <DependentUpon>RedTagVisualizer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RedTail.xaml.cs">
+      <DependentUpon>RedTail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RedToxin.xaml.cs">
+      <DependentUpon>RedToxin.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TagVisualization1.xaml.cs">
+      <DependentUpon>TagVisualization1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TagVisualizationEnterLeaveEventArgs.cs" />
+    <Compile Include="TagVisualizerEvents.cs" />
+    <Compile Include="TagVisualizerSynchronizationMode.cs" />
+    <Compile Include="TrailOnTouch.xaml.cs">
+      <DependentUpon>TrailOnTouch.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WhiteBlueEcoli.xaml.cs">
+      <DependentUpon>WhiteBlueEcoli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WhiteEcoliWithColorPlasmid.xaml.cs">
+      <DependentUpon>WhiteEcoliWithColorPlasmid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WhiteRedEcoli.xaml.cs">
+      <DependentUpon>WhiteRedEcoli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WhiteTail.xaml.cs">
+      <DependentUpon>WhiteTail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WhiteYellowEcoli.xaml.cs">
+      <DependentUpon>WhiteYellowEcoli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YellowEcoli.xaml.cs">
+      <DependentUpon>YellowEcoli.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YellowTagVisualization.xaml.cs">
+      <DependentUpon>YellowTagVisualization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YellowTail.xaml.cs">
+      <DependentUpon>YellowTail.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="YellowToxin.xaml.cs">
+      <DependentUpon>YellowToxin.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BlockerCanvas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlueEcoli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlueEcoliScatterViewItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlueTagVisualization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlueTagVizCanvas.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlueTail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BlueToxin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RedEcoli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RedTagVisualizer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RedTail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RedToxin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SurfaceWindow1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BlueTagVisualization.xaml.cs">
+      <DependentUpon>BlueTagVisualization.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBarWrapper.cs" />
+    <Compile Include="SifteoServer.cs" />
+    <Compile Include="SurfaceWindow1.xaml.cs">
+      <DependentUpon>SurfaceWindow1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="TagVisualization1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TrailOnTouch.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WhiteBlueEcoli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WhiteEcoliWithColorPlasmid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WhiteRedEcoli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WhiteTail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WhiteYellowEcoli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YellowEcoli.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YellowTagVisualization.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YellowTail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="YellowToxin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\blueBall.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\gears-animation.gif" />
+    <Resource Include="Resources\canvastexture.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Resources\icon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="Resources\plasmidBlue.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\plasmidRed.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\plasmidYellow.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\redBall.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\yellowBall.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\w Ecoli travel 14.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="SifteoSurfaceApp.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

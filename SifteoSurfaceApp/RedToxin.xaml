@@ -1,0 +1,24 @@
+﻿<s:TagVisualization
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:s="http://schemas.microsoft.com/surface/2008"
+	mc:Ignorable="d"
+	x:Class="SifteoSurfaceApp.RedToxin"
+	x:Name="UserControl"
+	Background="Transparent"
+    >
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Path Margin="155.516,82.458,129.842,48.128" Stretch="Fill" Stroke="#FF000000" 
+              Data="M313.76706,92.216486 C356.43231,88.767954 336.63541,-3.015135 401.63986,25.592937 463.08858,52.636155 342.91542,93.561664 384.41326,121.40027 400.96162,132.50165 459.42858,45.838338 478.16216,123.23616 491.13776,176.84491 410.42193,169.78675 407.86158,180.75943 399.88104,214.961 471.46712,208.21051 455.14577,249.10631 434.68974,300.36223 409.25016,272.18687 380.2242,242.69704 349.30005,211.27869 326.1573,258.20663 349.89889,279.28483 388.30003,313.37806 373.0884,344.28692&#xd;&#xa;346.48682,348.33135 252.31874,362.64841 317.59763,260.73834 283.86147,242.29885 259.12243,228.77701 233.96367,360.26266 182.6888,315.40531 136.01491,274.57307 218.80103,267.20194 218.80103,220.27388 218.80103,198.66526 200.98814,212.24049 171.71732,214.70586 115.0566,219.4782 102.65399,142.93228 187.24614,144.52306 266.83441,146.01973 105.23565,105.17749 158.56954,48.224249 214.43247,-11.429654 207.30407,128.0104 250.72171,114.48734 276.25942,106.53325&#xd;&#xa;192.4519,3.3464673 269.97904,3.1306587 332.13995,2.9576244 279.46681,94.988895 313.76706,92.216486 z" StrokeThickness="9">
+            <Path.Fill>
+                <RadialGradientBrush>
+                    <GradientStop Color="#FFF70909" Offset="0.418"/>
+                    <GradientStop Color="#FF101010" Offset="0"/>
+                </RadialGradientBrush>
+            </Path.Fill>
+        </Path>
+    </Grid>
+</s:TagVisualization>

@@ -1,0 +1,41 @@
+﻿<s:SurfaceWindow x:Class="SifteoSurfaceApp.SurfaceWindow1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:s="http://schemas.microsoft.com/surface/2008"
+    xmlns:local="clr-namespace:SifteoSurfaceApp"
+    Title="SifteoSurfaceApp"
+    TouchDown="SurfaceWindow_TouchDown"
+    s:TouchVisualizer.VisualizationColor1="Aquamarine" 
+    s:TouchVisualizer.VisualizationColor2="Red" 
+    s:TouchVisualizer.VisualizationColor3="PaleGoldenrod"
+    MouseDown="SurfaceWindow_MouseDown"
+    MouseDoubleClick="SurfaceWindow_MouseDoubleClick"
+                     >
+    
+    <Grid x:Name="LayoutRoot" Background="White" >
+        
+        
+     <s:TagVisualizer x:Name="MyTagVisualizer" >
+        <s:TagVisualizer.Definitions>
+            
+                <!-- Cubes -->
+                <s:TagVisualizationDefinition Value="0xA3" VisualizationCreated="TagVisualizationDefinition_VisualizationCreated" TagRemovedBehavior="Persist" Source="TagVisualization1.xaml"/>
+                <s:TagVisualizationDefinition Value="0xA4" VisualizationCreated="TagVisualizationDefinition_VisualizationCreated" TagRemovedBehavior="Persist" Source="TagVisualization1.xaml"/>
+                <s:TagVisualizationDefinition Value="0xC5" VisualizationCreated="TagVisualizationDefinition_VisualizationCreated" TagRemovedBehavior="Persist" Source="TagVisualization1.xaml"/>
+                <s:TagVisualizationDefinition Value="0x1A" VisualizationCreated="TagVisualizationDefinition_VisualizationCreated" TagRemovedBehavior="Persist" Source="TagVisualization1.xaml"/>
+                <s:TagVisualizationDefinition Value="0x2A" VisualizationCreated="TagVisualizationDefinition_VisualizationCreated" TagRemovedBehavior="Persist" Source="TagVisualization1.xaml"/>
+                <s:TagVisualizationDefinition Value="0x3A" VisualizationCreated="TagVisualizationDefinition_VisualizationCreated" TagRemovedBehavior="Persist" Source="TagVisualization1.xaml"/>
+                
+
+                <!-- Toxin tags -->
+                <s:TagVisualizationDefinition Value="0x1B" VisualizationCreated="RedToxin_VisualizationCreated" TagRemovedBehavior="Fade" Source="RedToxin.xaml"/>
+                <s:TagVisualizationDefinition Value="0x2B" VisualizationCreated="BlueToxin_VisualizationCreated" TagRemovedBehavior="Fade" Source="BlueToxin.xaml"/>
+                <s:TagVisualizationDefinition Value="0x3B" VisualizationCreated="YellowToxin_VisualizationCreated" TagRemovedBehavior="Fade" Source="YellowToxin.xaml"/>
+                
+            </s:TagVisualizer.Definitions>
+    </s:TagVisualizer>
+
+        
+
+    </Grid>
+</s:SurfaceWindow>
